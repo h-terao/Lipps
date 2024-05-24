@@ -1,21 +1,25 @@
 [tool.poetry]
-name = "python-template"
+name = "Lipps"
 version = "0.1.0"
-description = ""
+description = "A deep network collection built on Flax linen API"
 license = "Apache-2.0"
-authors = [""]
+authors = ["h-terao"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
 ruff = "^0.4.2"
+jax = {extras = ["cpu"], version = "^0.4.28"}
+flax = "^0.8.3"
+einops = "^0.8.0"
+chex = "^0.1.86"
 
 
 [tool.ruff]
 target-version = "py312"
 line-length = 120
 indent-width = 4
-select = ["F", "B", "I", "E","W"]
+select = ["F", "B", "E","W"]
 ignore = ["E731"]
 
 [tool.ruff.pydocstyle]
